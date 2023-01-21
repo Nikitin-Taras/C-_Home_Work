@@ -9,4 +9,11 @@ int N = Convert.ToInt32(Console.ReadLine());
 
 int res = N%100;
 
-Console.Write(res + "\b ");
+if(N < 100 || N > 1000)
+{
+    Console.Write("Неверное значение");
+}
+else
+{
+    Console.Write("Вторая цифра заданного числа = " + res + "\b ");
+}
