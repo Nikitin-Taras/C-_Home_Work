@@ -9,10 +9,16 @@
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-int count 
-while
-
-if N >= 3;
+if (N >= 100)
 {
-    Res = N
+    while (N > 999)
+    {
+        N = N / 10;
+    }
+    int res = N % 10;
+    Console.Write("Третья цифра введеного числа = " + res);
+}
+else
+{
+    Console.Write("Третьей цифры введенного чила не сущетсвует");
 }
