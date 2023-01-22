@@ -6,11 +6,11 @@
 Console.Write("Введите число дня недели (от 1 до 7): ");
 int day = Convert.ToInt32(Console.ReadLine());
 
-if(day<=5)
+if (day <= 5)
 {
     Console.Write("Это рабочий день!");
 }
-else if(day>7)
+else if (day > 7)
 {
     Console.Write("Неверное значение");
 }

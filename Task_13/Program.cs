@@ -9,7 +9,7 @@
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-if (N >= 100)
+if (N >= 100 || N <= -100)
 {
     while (N > 999)
     {
