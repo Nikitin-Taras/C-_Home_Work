@@ -11,7 +11,6 @@ int num = Convert.ToInt32(Console.ReadLine());
 
 
 int sum = 0;
-int count = 0;
 while (num > 0)
 {
     sum += num % 10;
