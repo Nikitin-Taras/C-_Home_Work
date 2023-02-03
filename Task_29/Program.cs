@@ -6,7 +6,6 @@
 
 
 
-
 Console.Write("Введите размер массива: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
