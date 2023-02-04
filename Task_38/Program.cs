@@ -14,33 +14,24 @@ for (int i = 0; i < arr.Length; i++)
 
 PrintArr(arr);
 
-void PrintArr(int[] arry)
+void PrintArr(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-         Console.Write($"{arry[i], 2}");
+        Console.Write($"{arr[i],2}");
     }
 }
-int Sum(int[] arry)
+int Sum(int[] arr)
 {
-    int result = 0;
-    int max = 0;
-    int min = 0;
+    int max = arr[0];
+    int min = arr[0];
 
-    for (int i = 0; i < arr.Length; i++)
+    for (int i = 0; i < arr[i]; i++)
     {
-        if (arr[i] > max)
-        {
-            max = i;
-        }
-        else if (arr[i] < max)
-        {
-            min = i;
-        }
-
-     result = (max - min);   
+        if (arr[i] > max) max = arr[i];
+        if (arr[i] < min) min = arr[i];
     }
-    return result;
+    return max - min;
 }
 Console.WriteLine();
-Console.Write($"разница между максимальным и минимальным элементов массива равна {Sum(arr)}");
+Console.Write($"разница между максимальным и минимальным элементом массива равна {Sum(arr)}");
