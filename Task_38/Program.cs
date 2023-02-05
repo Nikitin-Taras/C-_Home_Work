@@ -5,6 +5,7 @@
 Console.WriteLine("Введите размер массива: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
+Console.Write($"[");
 int[] arr = new int[num];
 
 for (int i = 0; i < arr.Length; i++)
@@ -18,7 +19,7 @@ void PrintArr(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.Write($"{arr[i],2}");
+        Console.Write($"{arr[i]} ");
     }
 }
 int Sum(int[] arr)
@@ -26,12 +27,13 @@ int Sum(int[] arr)
     int max = arr[0];
     int min = arr[0];
 
-    for (int i = 0; i < arr[i]; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > max) max = arr[i];
         if (arr[i] < min) min = arr[i];
     }
     return max - min;
 }
+Console.Write($"]");
 Console.WriteLine();
 Console.Write($"разница между максимальным и минимальным элементом массива равна {Sum(arr)}");
