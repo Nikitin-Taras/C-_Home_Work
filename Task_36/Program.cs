@@ -22,7 +22,7 @@ Console.WriteLine("\b\b]");
 
 for (int i = 0; i < num; i++)
 {
-    if (array[i] % 2 == 1)
+    if (i % 2 == 1)
     sum += array[i];
 }
-Console.WriteLine($"Сумма нечетных чисел = {sum}");
+Console.WriteLine($"Сумма элементов нечетных индексов = {sum}");
